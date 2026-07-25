@@ -1100,7 +1100,7 @@ function submitCheckout(e) {
   var email = document.getElementById('modal-email').value;
   var tel   = document.getElementById('modal-telefone').value;
 
-  if(typeof fbq !== 'undefined') fbq('track', 'Purchase', {value: 97, currency: 'BRL'});
+  if(typeof fbq !== 'undefined') fbq('track', 'Lead', {value: 97, currency: 'BRL'});
 
   var hotmartUrl = 'https://pay.hotmart.com/O100596099S?checkoutMode=10'
     + '&name=' + encodeURIComponent(nome)
